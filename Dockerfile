@@ -25,7 +25,8 @@ RUN cd /opt && \
     unzip sdk-tools-linux.zip -d android-sdk && \
     rm -f sdk-tools-linux.zip
 
-RUN touch ~/.android/repositories.cfg && \
+RUN mkdir -p ~/.android && \
+    touch ~/.android/repositories.cfg && \
     echo y | sdkmanager "platform-tools" \
                         "platforms;android-25" \
                         "build-tools;25.0.3" \
