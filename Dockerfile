@@ -28,8 +28,8 @@ RUN cd /opt && \
 RUN mkdir -p ~/.android && \
     touch ~/.android/repositories.cfg && \
     echo y | sdkmanager "platform-tools" \
-                        "platforms;android-25" \
-                        "build-tools;25.0.3" \
+                        "platforms;android-26" \
+                        "build-tools;26.1.1" \
                         "extras;google;m2repository" \
                         "extras;android;m2repository" \
                         "extras;google;google_play_services"
